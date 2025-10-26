@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Teori Java</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="welcome-page" class="page active">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ilustrasi Pemrograman Java" class="welcome-image">
+        <h1>Selamat Datang di Kuis Java!</h1>
+        <p>Mari kita uji pengetahuan Anda tentang pemrograman Java dari dasar hingga konstruktor. Siap untuk tantangan?</p>
+        <button id="enter-btn">Masuk Kuis</button>
+    </div>
+
+    <div id="start-page" class="page">
+        <h1>Kuis Teori Java: Dari Dasar hingga Konstruktor</h1>
+        <p>Kuis ini akan menguji pengetahuan Anda tentang dasar-dasar pemrograman Java, mulai dari konsep dasar hingga konstruktor. Ada 10 pertanyaan. Selamat mengerjakan!</p>
+        <button id="start-btn">Mulai Kuis</button>
+    </div>
+
+    <div id="quiz-page" class="page">
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="question-number">Pertanyaan 1 dari 10</div>
+        <div id="question"></div>
+        <div id="options">
+            <button class="option-btn" data-index="0"></button>
+            <button class="option-btn" data-index="1"></button>
+            <button class="option-btn" data-index="2"></button>
+            <button class="option-btn" data-index="3"></button>
+        </div>
+        <button id="next-btn" disabled>Selanjutnya</button>
+    </div>
+
+    <div id="result-page" class="page">
+        <h2>Hasil Kuis</h2>
+        <p id="score-text"></p>
+        <p id="percentage-text"></p>
+        <p id="motivation-text"></p>
+        <p id="best-score-text"></p>
+        <button id="restart-btn">Ulangi Kuis</button>
+    </div>
+    <div id="result-page" class="page">
+    <h2>Hasil Kuis</h2>
+    <p id="score-text"></p>
+    <p id="percentage-text"></p>
+    <p id="motivation-text"></p>
+    <p id="best-score-text"></p>
+    <p id="last-score-text"></p> <!-- Tambahkan ini -->
+    <button id="restart-btn">Ulangi Kuis</button>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+/* Font dan Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e3a8a; /* Biru tua */
+    color: #ffffff; /* Putih */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.page {
+    display: none;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff; /* Putih */
+    color: #1e3a8a; /* Biru tua */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Halaman Awal */
+#start-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#start-page p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+#start-btn {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-btn:hover {
+    background-color: #3b82f6;
+}
+
+/* Halaman Kuis */
+#progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #e5e7eb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #1e3a8a;
+    border-radius: 5px;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+#question-number {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f3f4f6;
+    color: #1e3a8a;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-btn:hover {
+    background-color: #e5e7eb;
+}
+
+.option-btn.correct {
+    background-color: #10b981; /* Hijau */
+    color: #ffffff;
+}
+
+.option-btn.wrong {
+    background-color: #ef4444; /* Merah */
+    color: #ffffff;
+}
+
+#next-btn {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#next-btn:hover {
+    background-color: #3b82f6;
+}
+
+#next-btn:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Halaman Hasil */
+#result-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#result-page p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#restart-btn {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#restart-btn:hover {
+    background-color: #3b82f6;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .page {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #start-page h1 {
+        font-size: 1.5rem;
+    }
+
+    #question {
+        font-size: 1.2rem;
+    }
+
+    .option-btn {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
+/* ... (kode sebelumnya tetap sama) */
+
+/* Halaman Welcome */
+#welcome-page {
+    text-align: center;
+}
+
+.welcome-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#welcome-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#welcome-page p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+#enter-btn {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#enter-btn:hover {
+    background-color: #3b82f6;
+}
+
+/* Responsif untuk HP - tambahkan untuk welcome */
+@media (max-width: 768px) {
+    .welcome-image {
+        max-width: 300px;
+    }
+
+    #welcome-page h1 {
+        font-size: 1.5rem;
+    }
+
+    #welcome-page p {
+        font-size: 1rem;
+    }
+}
+
+/* ... (sisanya tetap sama) */
